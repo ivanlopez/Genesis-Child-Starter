@@ -1,0 +1,429 @@
+/* Typographical Elements
+--------------------------------------------- */
+
+html {
+	font-size: @font-size-base; /* 10px browser default */
+}
+
+body {
+	background-color: @body-bg;
+	color: @text-color;
+	font-family: @font-family-base;
+	font-size: @font-size-base;
+	font-weight: 300;
+	line-height: @line-height-base;
+}
+
+a,
+button,
+input:focus,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+textarea:focus,
+.button {
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition:    all 0.1s ease-in-out;
+	-ms-transition:     all 0.1s ease-in-out;
+	-o-transition:      all 0.1s ease-in-out;
+	transition:         all 0.1s ease-in-out;
+}
+
+::-moz-selection {
+	background-color: @gray-dark;
+	color: @white;
+}
+
+::selection {
+	background-color: @gray-dark;
+	color: @white;
+}
+
+a {
+	color: @link-color;
+	text-decoration: none;
+}
+
+a img {
+	margin-bottom: -4px;
+}
+
+a:hover {
+	color: @gray-dark;
+}
+
+p {
+	margin: 0 0 24px;
+	padding: 0;
+}
+
+strong {
+	font-weight: 700;
+}
+
+ol,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+blockquote,
+blockquote::before {
+	color: #999;
+}
+
+blockquote {
+	margin: 40px 40px 24px;
+}
+
+blockquote::before {
+	content: "\201C";
+	display: block;
+	font-size: 30px;
+	height: 0;
+	left: -20px;
+	position: relative;
+	top: -10px;
+}
+
+.entry-content code {
+	background-color: @gray-dark;
+	color: @gray;
+}
+
+cite {
+	font-style: normal;
+}
+
+/* Headings
+--------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: @gray-dark;
+	font-family: @font-family-base;
+	font-weight: @headings-font-weight;
+	line-height: @headings-line-height;
+	margin: 0 0 16px;
+}
+
+h1 { font-size: 36px; }
+h2 { font-size: 30px; }
+h3 { font-size: 24px; }
+h4 { font-size: 20px; }
+h5 { font-size: 18px; }
+h6 { font-size: 16px; }
+
+/* Objects
+--------------------------------------------- */
+
+embed,
+iframe,
+img,
+object,
+video,
+.wp-caption {
+	max-width: 100%;
+}
+
+img {
+	height: auto;
+	width: auto; /* IE8 */
+}
+
+/* Forms
+--------------------------------------------- */
+
+input,
+select,
+textarea {
+	background-color: @white;
+	border: 1px solid @gray-lighter;
+	border-radius: @border-radius-base;
+	color: @gray-light;
+	padding: 4px;
+	width: 100%;
+}
+
+input:focus,
+textarea:focus {
+	border: 1px solid @gray-light;
+	outline: none;
+}
+
+::-moz-placeholder {
+	color: @gray-light;
+	opacity: 1;
+}
+
+::-webkit-input-placeholder {
+	color: @gray-light;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.button,
+.entry-content .button {
+	display: inline-block;
+	padding: 9px 25px;
+	text-align: center;
+	font-family: @font-family-sans-serif;
+	line-height: 100%;
+	.border-radius;
+	font-size: @font-size-base;
+	font-weight: @btn-font-weight;
+	text-transform: uppercase;
+	margin: 0px;
+	font-smooth: always; 
+	cursor: pointer;
+	text-decoration: none;
+	outline: none;
+
+	&:focus { 
+  	}
+
+	&:hover,
+	&:focus {
+	   color: @btn-default-color;
+	   text-decoration: none;
+	   .transition;
+	}
+
+  	&:active,
+  	&.active {
+	    outline: 0;
+	    background-image: none;
+  	}
+
+  	&.disabled,
+  	&[disabled],
+  	fieldset[disabled] & {
+	    cursor: not-allowed;
+	    pointer-events: none; // Future-proof disabling of clicks
+  	}
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button {
+	display: none;
+}
+
+/* Tables
+--------------------------------------------- */
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	line-height: 2;
+	margin-bottom: 40px;
+	width: 100%;
+}
+
+tbody {
+	border-bottom: 1px solid @gray-light;
+}
+
+th,
+td {
+	text-align: left;
+}
+
+th {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+td {
+	border-top: 1px solid @gray-light;
+	padding: 6px 0;
+}
+
+
+/*
+Structure and Layout
+---------------------------------------------------------------------------------------------------- */
+
+/* Site Containers
+--------------------------------------------- */
+
+.site-inner,
+.wrap {
+	margin: 0 auto;
+	max-width: 1140px;
+}
+
+.site-inner {
+	clear: both;
+	padding-top: 40px;
+}
+
+/* Column Widths and Positions
+--------------------------------------------- */
+
+/* Wrapping div for .content and .sidebar-primary */
+
+.content-sidebar-sidebar .content-sidebar-wrap,
+.sidebar-content-sidebar .content-sidebar-wrap,
+.sidebar-sidebar-content .content-sidebar-wrap {
+	width: 920px;
+}
+
+.content-sidebar-sidebar .content-sidebar-wrap {
+	float: left;
+}
+
+.sidebar-content-sidebar .content-sidebar-wrap,
+.sidebar-sidebar-content .content-sidebar-wrap {
+	float: right;
+}
+
+/* Content */
+
+.content {
+	float: right;
+	width: 740px;
+}
+
+.content-sidebar .content,
+.content-sidebar-sidebar .content,
+.sidebar-content-sidebar .content {
+	float: left;
+}
+
+.content-sidebar-sidebar .content,
+.sidebar-content-sidebar .content,
+.sidebar-sidebar-content .content {
+	width: 520px;
+}
+
+.full-width-content .content {
+	width: 100%;
+}
+
+/* Primary Sidebar */
+
+.sidebar-primary {
+	float: right;
+	width: 360px;
+}
+
+.sidebar-content .sidebar-primary,
+.sidebar-sidebar-content .sidebar-primary {
+	float: left;
+}
+
+/* Secondary Sidebar */
+
+.sidebar-secondary {
+	float: left;
+	width: 180px;
+}
+
+.content-sidebar-sidebar .sidebar-secondary {
+	float: right;
+}
+
+/* Column Classes
+--------------------------------------------- */
+
+.container_12
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.gridRow{
+	float: left;
+	width: 100%;
+}
+
+.alpha { margin-left: 0px !important; }	
+.omega { margin-right: 0px !important; }	
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12 {
+        display: inline;
+        float: left;
+        margin-left: 1.64102564102564%;
+        margin-right: 1.64102564102564%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+}
+	
+.container_12 .grid_1  { 
+	width: 4.382978723404255%;
+  	*width: 4.329787234042553%;
+} 
+
+.container_12 .grid_2  { 
+	width: 12.893617021276595%;
+  	*width: 12.840425531914894%;
+}
+
+.container_12 .grid_3  { 
+	width: 21.404255319148934%;
+  	*width: 21.351063829787233%;
+}
+
+.container_12 .grid_4  {  
+	width: 29.914893617021278%;
+  	*width: 29.861702127659576%;
+}
+
+.container_12 .grid_5  { 
+	width: 38.42553191489362%;
+  	*width: 38.37234042553192%;
+}
+
+.container_12 .grid_6  { 
+	width: 46.93617021276595%;
+  	*width: 46.88297872340425%;
+}
+
+.container_12 .grid_7  { 
+	width: 55.44680851063829%;
+  	*width: 55.39361702127659%;
+}
+
+.container_12 .grid_8  { 
+	width: 63.95744680851064%;
+  	*width: 63.90425531914893%;
+}
+
+.container_12 .grid_9  { 
+	width: 72.46808510638297%;
+  	*width: 72.41489361702126%;
+}
+
+.container_12 .grid_10 { 
+	width: 80.97872340425532%;
+  	*width: 80.92553191489361%;
+}
+
+.container_12 .grid_11 { 
+	  width: 89.48936170212765%;
+  	*width: 89.43617021276594%;
+}
+
+.container_12 .grid_12 { 
+	width: 98%;
+  	*width: 97.94680851063829% 
+}

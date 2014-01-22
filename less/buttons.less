@@ -1,0 +1,130 @@
+/* Buttons Styles */
+
+
+.border-radius (@radius: 3px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	-ms-border-radius: @radius;
+	-o-border-radius: @radius;
+	border-radius: @radius;
+}
+
+
+.transition (@trans: background-color .5s ease) {
+	-webkit-transition: @trans;
+	-moz-transition: @trans;
+	-ms-transition: @trans;
+	-o-transition: @trans;
+	transition: @trans;
+}
+
+.button{
+	display: inline-block;
+	padding: 9px 25px;
+	text-align: center;
+	font-family: @font-family-sans-serif;
+	line-height: 100%;
+	.border-radius;
+	font-size: @font-size-base;
+	font-weight: @btn-font-weight;
+	text-transform: uppercase;
+	margin: 0px;
+	font-smooth: always; 
+	cursor: pointer;
+	text-decoration: none;
+	outline: none;
+
+	&:focus { 
+  	}
+
+	&:hover,
+	&:focus {
+	   color: @btn-default-color;
+	   text-decoration: none;
+	   .transition;
+	}
+
+  	&:active,
+  	&.active {
+	    outline: 0;
+	    background-image: none;
+  	}
+
+  	&.disabled,
+  	&[disabled],
+  	fieldset[disabled] & {
+	    cursor: not-allowed;
+	    pointer-events: none; // Future-proof disabling of clicks
+  	}
+}
+
+// Alternate buttons
+// --------------------------------------------------
+
+.btn-default {
+  .button-variant(@btn-default-color; @btn-default-bg; @btn-default-border);
+}
+.btn-primary {
+  .button-variant(@btn-primary-color; @btn-primary-bg; @btn-primary-border);
+}
+.btn-secondary {
+  .button-variant(@btn-secondary-color; @btn-secondary-bg; @btn-secondary-border);
+}
+// Success appears as green
+.btn-success {
+  .button-variant(@btn-success-color; @btn-success-bg; @btn-success-border);
+}
+// Danger and error appear as red
+.btn-danger {
+  .button-variant(@btn-danger-color; @btn-danger-bg; @btn-danger-border);
+}
+// Info appears as blue-green
+.btn-info {
+  .button-variant(@btn-info-color; @btn-info-bg; @btn-info-border);
+}
+
+
+// Button variants
+// -------------------------
+// Easily pump out default styles, as well as :hover, :focus, :active,
+// and disabled options for all buttons
+.button-variant(@color; @background; @border) {
+  color: @color;
+  background-color: @background;
+  border-color: @border;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open .dropdown-toggle& {
+    color: @color;
+    background-color: darken(@background, 8%);
+        border-color: darken(@border, 12%);
+  }
+  &:active,
+  &.active,
+  .open .dropdown-toggle& {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      background-color: @background;
+          border-color: @border;
+    }
+  }
+
+  .badge {
+    color: @background;
+    background-color: @color;
+  }
+}
+
+
+

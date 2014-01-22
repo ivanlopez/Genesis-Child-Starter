@@ -1,0 +1,138 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+// Global values
+// --------------------------------------------------
+
+@border-radius-base: 3px;
+
+// Grays
+// -------------------------
+
+@gray-darker:            lighten(#000, 13.5%); // #222
+@gray-dark:              lighten(#000, 20%);   // #333
+@gray:                   lighten(#000, 33.5%); // #555
+@gray-light:             lighten(#000, 60%);   // #999
+@gray-lighter:           lighten(#000, 93.5%); // #eee
+@white:  			 #fff;		
+
+// Brand colors
+// -------------------------
+
+@brand-primary:         #428bca;
+@brand-secondary:		#428bca;
+@brand-accent:		#428bca;
+@brand-success:         #5cb85c;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f;
+@brand-info:            #5bc0de;
+
+// Scaffolding
+// -------------------------
+
+@body-bg:               #f5f5f5;
+@text-color:            #666;
+@nav-bkg:               @gray-dark;	
+@second-nav-bkg:        #fff;		
+@drop-nav-bkg:        	#fff;		
+@drop-nav-border:       #999;		
+@footer-text-bg:  	@gray-light;		
+@footer-bg:  		#fff;	
+
+@blockquote-border-color:	#999;
+
+// Links
+// -------------------------
+
+@link-color:            	@brand-primary;
+@link-hover-color:      	darken(@link-color, 15%);
+
+@link-footer-color:            @gray-lighter;
+@link-footer-hover-color:      darken(@link-color, 15%);
+
+// Typography
+// -------------------------
+
+@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-base:        @font-family-sans-serif;
+
+@font-size-base:          14px;
+@font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
+@font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
+
+@font-size-h1:            floor((@font-size-base * 2.6)); // ~36px
+@font-size-h2:            floor((@font-size-base * 2.15)); // ~30px
+@font-size-h3:            ceil((@font-size-base * 1.7)); // ~24px
+@font-size-h4:            ceil((@font-size-base * 1.25)); // ~18px
+@font-size-h5:            @font-size-base;
+@font-size-h6:            ceil((@font-size-base * 0.85)); // ~12px
+
+@line-height-base:        1.428571429; // 20/14
+@line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
+
+@headings-font-family:    inherit;
+@headings-font-weight:    700;
+@headings-line-height:    1.1;
+@headings-color:          inherit;
+
+// Buttons
+// -------------------------
+
+@btn-font-weight:                normal;
+
+@btn-default-color:              #333;
+@btn-default-bg:                 #fff;
+@btn-default-border:             #ccc;
+
+@btn-primary-color:              #fff;
+@btn-primary-bg:                 @brand-primary;
+@btn-primary-border:             darken(@btn-primary-bg, 5%);
+
+@btn-secondary-color:		   #fff;
+@btn-secondary-bg:               @brand-secondary;
+@btn-secondary-border:           darken(@btn-secondary-bg, 5%);
+
+@btn-success-color:              #fff;
+@btn-success-bg:                 @brand-success;
+@btn-success-border:             darken(@btn-success-bg, 5%);
+
+@btn-danger-color:               #fff;
+@btn-danger-bg:                  @brand-danger;
+@btn-danger-border:              darken(@btn-danger-bg, 5%);
+
+@btn-info-color:                 #fff;
+@btn-info-bg:                    @brand-info;
+@btn-info-border:                darken(@btn-info-bg, 5%);
+
+@btn-link-disabled-color:        @gray-light;
+
+// Form states and alerts
+// -------------------------
+
+@state-danger-text:             @brand-warning;
+@state-danger-bg:               #dff0d8;
+@state-danger-border:           @brand-warning;
+
+// Alerts
+// -------------------------
+@alert-padding:               15px;
+@alert-border-radius:         @border-radius-base;
+@alert-link-font-weight:      bold;
+
+@alert-success-bg:            lighten(@brand-success, 40%);
+@alert-success-text:          @brand-success;
+@alert-success-border:        @brand-success;
+
+@alert-info-bg:               lighten(@brand-info, 40%);
+@alert-info-text:             @brand-info;
+@alert-info-border:           @brand-info;
+
+@alert-warning-bg:            lighten(@brand-warning, 40%);
+@alert-warning-text:          @brand-warning;
+@alert-warning-border:        @brand-warning;
+
+@alert-danger-bg:             lighten(@brand-danger, 40%);
+@alert-danger-text:           @brand-danger;
+@alert-danger-border:         @brand-danger; 

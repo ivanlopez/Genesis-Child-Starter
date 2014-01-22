@@ -1,0 +1,204 @@
+/* Entries
+--------------------------------------------- */
+
+.entry {
+	margin-bottom: 20px;
+	padding: 20px 20px 24px;
+}
+
+.entry-content a {
+	color: @link-color;
+}
+
+.entry-content a:hover {
+	color: @link-hover-color;
+}
+
+.entry-content .attachment a,
+.entry-content .gallery a {
+	border: none;
+}
+
+.entry-content ol,
+.entry-content p,
+.entry-content ul,
+.quote-caption {
+	margin-bottom: 26px;
+}
+
+.entry-content ol,
+.entry-content ul {
+	margin-left: 40px;
+}
+
+.entry-content ol li {
+	list-style-type: decimal;
+}
+
+.entry-content ul li {
+	list-style-type: disc;
+}
+
+.entry-content ol ol,
+.entry-content ul ul {
+	margin-bottom: 0;
+}
+
+.entry-content .search-form {
+	width: 50%;
+}
+
+.entry-meta {
+	color: @gray-light;
+	font-size: 14px;
+}
+
+.entry-meta a {}
+
+.entry-header .entry-meta {
+	margin-bottom: 24px;
+	margin-bottom: 2.4rem;
+}
+
+.entry-footer .entry-meta {
+	border-top: 2px solid @gray-lighter;
+	padding: 32px 0px 8px;
+}
+
+.entry-comments-link::before {
+	content: "\2014";
+	margin: 0 6px 0 2px;
+}
+
+.entry-categories,
+.entry-tags {
+	display: block;
+}
+
+/* Pagination
+--------------------------------------------- */
+
+.archive-pagination,
+.entry-pagination {
+	font-size: 14px;
+	margin: 40px 0;
+}
+
+.archive-pagination li {
+	display: inline;
+}
+
+.archive-pagination li a {
+	background-color: @gray-dark;
+	border-radius: 3px;
+	color: @white;
+	cursor: pointer;
+	display: inline-block;
+	padding: 8px 12px;
+}
+
+.archive-pagination li a:hover,
+.archive-pagination li.active a {
+	background-color: @gray-darker;
+}
+
+.entry-pagination a {}
+
+/* Comments
+--------------------------------------------- */
+
+.comment-respond,
+.entry-comments,
+.entry-pings {
+	margin-bottom: 40px;
+}
+
+.entry-comments {
+	padding: 40px;
+}
+
+.comment-respond,
+.entry-pings {
+	padding: 40px 40px 16px;
+}
+
+.comment-respond a,
+.entry-comments a {
+}
+
+.comment-content {
+	clear: both;
+}
+
+.entry-comments .comment-author {
+	margin-bottom: 0;
+}
+
+.comment-respond input[type="email"],
+.comment-respond input[type="text"],
+.comment-respond input[type="url"] {
+	width: 50%
+}
+
+.comment-respond label {
+	display: block;
+	margin-right: 12px;
+}
+
+.comment-list li,
+.ping-list li {
+	list-style-type: none;
+}
+
+.comment-list li {
+	margin-top: 24px;
+	padding: 32px;
+}
+
+.comment-list li li {
+	margin-right: -32px;
+}
+
+li.comment {
+	background-color: @gray-lighter;
+	border: 2px solid @white;
+	border-right: none;
+}
+
+.comment .avatar {
+	margin: 0 16px 24px 0;
+	margin: 0 1.6rem 2.4rem 0;
+}
+
+.entry-pings .reply {
+	display: none;
+}
+
+.bypostauthor {
+}
+
+.form-allowed-tags {
+	background-color: @gray;
+	font-size: 14px;
+	padding: 24px;
+}
+
+/* Blockquote
+--------------------------------------------- */
+
+blockquote {
+	border-left: @blockquote-border-color;
+	padding: 0 0 0 14px;
+	margin-bottom: 30px;
+	font-family: @font-family-base;
+	font-size: @font-size-large;
+	color: @gray-dark;
+	line-height: 40px;
+	letter-spacing: 0.5px;
+	-webkit-font-smoothing: antialiased;
+}
+       
+blockquote span {
+	font-weight: 700;
+	font-style: italic;
+}
