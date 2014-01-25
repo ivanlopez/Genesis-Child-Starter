@@ -628,57 +628,57 @@ Structure and Layout
 .grid_12 {
   display: inline;
   float: left;
-  margin-left: 1.5%;
-  margin-right: 1.5%;
+  margin-left: 1.64102564102564%;
+  margin-right: 1.64102564102564%;
   margin-top: 40px;
   margin-bottom: 40px;
 }
-.grid_1 {
+.container_12 .grid_1 {
   width: 4.382978723404255%;
   *width: 4.329787234042553%;
 }
-.grid_2 {
+.container_12 .grid_2 {
   width: 12.893617021276595%;
   *width: 12.840425531914894%;
 }
-.grid_3 {
+.container_12 .grid_3 {
   width: 21.404255319148934%;
   *width: 21.351063829787233%;
 }
-.grid_4 {
+.container_12 .grid_4 {
   width: 29.914893617021278%;
   *width: 29.861702127659576%;
 }
-.grid_5 {
+.container_12 .grid_5 {
   width: 38.42553191489362%;
   *width: 38.37234042553192%;
 }
-.grid_6 {
+.container_12 .grid_6 {
   width: 46.93617021276595%;
   *width: 46.88297872340425%;
 }
-.grid_7 {
+.container_12 .grid_7 {
   width: 55.44680851063829%;
   *width: 55.39361702127659%;
 }
-.grid_8 {
+.container_12 .grid_8 {
   width: 63.95744680851064%;
   *width: 63.90425531914893%;
 }
-.grid_9 {
+.container_12 .grid_9 {
   width: 72.46808510638297%;
   *width: 72.41489361702126%;
 }
-.grid_10 {
+.container_12 .grid_10 {
   width: 80.97872340425532%;
   *width: 80.92553191489361%;
 }
-.grid_11 {
+.container_12 .grid_11 {
   width: 89.48936170212765%;
   *width: 89.43617021276594%;
 }
-.grid_12 {
-  width: 97%;
+.container_12 .grid_12 {
+  width: 98%;
   *width: 97.94680851063829%;
 }
 /* Buttons Styles */
@@ -1551,7 +1551,7 @@ li.comment {
   display: none;
 }
 .form-allowed-tags {
-  background-color: #555555;
+  background-color: #eeeeee;
   font-size: 14px;
   padding: 24px;
 }
